@@ -19,6 +19,44 @@
         </ul>
     </nav>
 
+    <header>
+        <img src="assets/src/img/medicinal.svg" alt="Remédios" id="remedioImg">
+        <div id="titleHeader">
+            <h1>Cadastro de Medicamentos</h1>
+            <p>Farmácia da Gente</p>
+        </div>
+    </header>
+
+    <section>
+        <div id="first">
+            <label for="name">Nome do Medicamento</label>
+            <input id="pdName" autocomplete="off" type="text" placeholder="Dipirona" name="name">
+
+            <label for="qtd">Quantidade Disponível</label>
+            <input id="pdQtd" autocomplete="off" type="number" placeholder="100" name="qtd">
+
+            <label for="classMedicinal">Classe de Medicamento</label>
+            <input id="pdClass" autocomplete="off" type="text" placeholder="Analgésico" name="classMedicinal">
+
+            <button id="registerButton">Cadastrar</button>
+        </div>
+
+        <div id="second">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Medicamento</th>
+                    <th>Quantidade</th>
+                    <th>Classe</th>
+                    <th>Remover</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
 
     <script src="assets/src/js/script.js"></script>
 </body>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #76BEBE;
+    height: 10vh;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    color: aliceblue;
+    cursor: pointer;
+    list-style: none;
+    transition: 500ms;
+}
+
+nav ul li:hover {
+    color: rgb(235, 235, 235);
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+
+header img#remedioImg {
+    height: 100%;
+}
+
+header div#titleHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header div#titleHeader h1 {
+    color:#CF509C;
+}
+
+header div#titleHeader p {
+    font-size: 1.3rem;
+}
+
+section {
+    background-color: rgba(240, 196, 230, 0.26);
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+section div#first {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+section div#first label {
+    margin-bottom: 5px;
+}
+
+section div#first input {
+    outline: 2px solid #CF509C;
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 95%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+section div#first button {
+    background-color: #76BEBE;
+    border-radius: 5px;
+    border: 2px solid #76BEBE;
+    color: aliceblue;
+    width: 95%;
+    height: 35px;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+section div#first button:hover {
+    transform: scale(1.05);
+    transition: 500ms;
+    background-color: transparent;
+    border: 2px solid #76BEBE;
+    color: #76BEBE;
+}
+
+section div#second {
+    background-color: #CF509C;
+    height: 100%;
+    width: 50%;
+    margin-top: 25px;
+}
+
+section div#second table {
+    border-collapse: collapse;
+    border: 1px solid #76BEBE;
+    background-color: #76BEBE;
+    height: 100%;
+    width: 100%;
+}
+
+section div#second table thead {
+    color: aliceblue;
+    width: 10%;
+    letter-spacing: .05rem;
+}
+
+
+section div#second table td img#deleteImg{
+    width: 25px;
+    height: 25px;
+   
+
+}
+
+section div#second table tbody {
+    width: 50%;
+}
