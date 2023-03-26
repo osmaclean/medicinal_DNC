@@ -98,10 +98,13 @@ section div#first button {
     color: aliceblue;
     width: 95%;
     height: 35px;
+    display: flex;
     font-size: 1.3rem;
     text-align: center;
     cursor: pointer;
     transition: 500ms;
+    align-items: center;
+    justify-content: center;
 }
 
 section div#first button:hover {
@@ -113,32 +116,60 @@ section div#first button:hover {
 }
 
 section div#second {
-    background-color: #CF509C;
     height: 100%;
-    width: 50%;
+    width: 55%;
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    word-wrap: break-word;
 }
 
 section div#second table {
     border-collapse: collapse;
     border: 1px solid #76BEBE;
-    background-color: #76BEBE;
-    height: 100%;
+    border-radius: 5px;
     width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    margin-bottom: 20px;
 }
 
 section div#second table thead {
     color: aliceblue;
-    width: 10%;
+    width: 50%;
     letter-spacing: .05rem;
 }
 
+section div#second table th {
+    background-color: #76BEBE;
+    padding: 4px;
+    color: aliceblue;
+    font-size: 1.1rem;
+    height: 5vh;
+}
+
+section div#second table td {
+    padding: 10px;
+    font-size: 1.1rem;
+    word-wrap: break-word;
+
+}
 
 section div#second table td img#deleteImg{
     width: 25px;
     height: 25px;
-   
+    cursor: pointer;
+    transition: 500ms;
 
+}
+
+section div#second table td img#deleteImg:hover{
+    transform: scale(1.2);
+    transition: 500ms;
+}
+
+section div#second table tr {
+    width: 50%;
 }
 
 section div#second table tbody {
