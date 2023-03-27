@@ -44,6 +44,7 @@ header {
 
 header img#remedioImg {
     height: 100%;
+    width: 50%;
 }
 
 header div#titleHeader {
@@ -51,10 +52,15 @@ header div#titleHeader {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    height: 100%;
+    text-align: center;
+    width: 50%;
 }
 
 header div#titleHeader h1 {
-    color:#CF509C;
+    color: #CF509C;
+    width: 100%;
+    word-wrap: break-word;
 }
 
 header div#titleHeader p {
@@ -175,3 +181,205 @@ section div#second table tr {
 section div#second table tbody {
     width: 50%;
 }
+
+@media (max-width: 768px) {
+    nav {
+        background-color: #76BEBE;
+        height: 25vh;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav ul li {
+        color: aliceblue;
+        cursor: pointer;
+        list-style: none;
+        transition: 500ms;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    
+    nav ul li:hover {
+        color: rgb(235, 235, 235);
+        transform: scale(1.1);
+        transition: 500ms;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 45vh;
+    }
+    
+    
+    header img#remedioImg {
+        height: 230px;
+        width: 230px;
+        margin-top: 20px;
+    }
+    
+    header div#titleHeader {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+    
+    header div#titleHeader h1 {
+        color: #CF509C;
+        width: 100%;
+        margin-top: 20px;
+        height: 30%;
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    header div#titleHeader p {
+        font-size: 1.3rem;
+        width: 100%;
+        margin-top: 40px;
+        word-wrap: break-word;
+        height: 5%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    section {
+        background-color: rgba(240, 196, 230, 0.26);
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section div#first {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        height: 100%;
+    }
+    
+    section div#first label {
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+    }
+    
+    section div#first input {
+        outline: 2px solid #CF509C;
+        padding: 10px;
+        margin-bottom: 25px;
+        width: 95%;
+        height: 2rem;
+        border-radius: 5px;
+        border: 1px solid white;
+        font-size: 1.1rem;
+    }
+    section div#first input::placeholder {
+        font-size: 1.2rem;
+    }
+    
+    section div#first button {
+        background-color: #76BEBE;
+        border-radius: 5px;
+        border: 2px solid #76BEBE;
+        color: aliceblue;
+        width: 95%;
+        height: 35px;
+        display: flex;
+        font-size: 1.3rem;
+        text-align: center;
+        cursor: pointer;
+        transition: 500ms;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    section div#first button:hover {
+        transform: scale(1.05);
+        transition: 500ms;
+        background-color: transparent;
+        border: 2px solid #76BEBE;
+        color: #76BEBE;
+    }
+    
+    section div#second {
+        height: 100%;
+        width: 95%;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        word-wrap: break-word;
+    }
+    
+    section div#second table {
+        border-collapse: collapse;
+        border: 1px solid #76BEBE;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+        table-layout: fixed;
+        margin-bottom: 20px;
+    }
+    
+    section div#second table thead {
+        color: aliceblue;
+        width: 50%;
+        letter-spacing: .05rem;
+    }
+    
+    section div#second table th {
+        background-color: #76BEBE;
+        padding: 4px;
+        color: aliceblue;
+        font-size: 1.1rem;
+        height: 5vh;
+    }
+    
+    section div#second table td {
+        padding: 10px;
+        font-size: 1.1rem;
+        word-wrap: break-word;
+    
+    }
+    
+    section div#second table td img#deleteImg{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        transition: 500ms;
+    
+    }
+    
+    section div#second table td img#deleteImg:hover{
+        transform: scale(1.2);
+        transition: 500ms;
+    }
+    
+    section div#second table tr {
+        width: 50%;
+    }
+    
+    section div#second table tbody {
+        width: 50%;
+    }
+} 
